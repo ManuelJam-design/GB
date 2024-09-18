@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>GOLDBLUE</h2>
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="#">Withdraw</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Dark Mode</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h2>Referral link here <button>Copy</button></h2>
+            <div class="referral-info">
+                <p>Direct Gen Referral: ₱908.75</p>
+                <p>Indirect Gen Referral: ₱234.00</p>
+                <p>Total Package Earn: ₱3,110.00</p>
+                <p>Total Withdraw: ₱4,252.00</p>
+            </div>
+        </div>
+
+        <div class="recent-transactions">
+            <h3>Recent Transactions</h3>
+            <ul>
+                <li>Deposit: + ₱1,900 (Processing)</li>
+                <li>Withdraw: - ₱2,000 (Success)</li>
+                <li>Withdraw: - ₱2,500 (Success)</li>
+                <li>Deposit: + ₱200 (Success)</li>
+            </ul>
+            <button>See All Transactions</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Styles (styles.css) -->
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: #333;
+        color: white;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        background-color: #444;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .sidebar ul li a.active {
+        background-color: #1b1bfc;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .dashboard-header {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-header h2 {
+        margin-bottom: 10px;
+    }
+
+    .recent-transactions {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .recent-transactions ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .recent-transactions ul li {
+        margin-bottom: 10px;
+    }
+
+    .recent-transactions button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #1b1bfc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>

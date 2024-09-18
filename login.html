@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldblue - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>GOLDBLUE</h2>
+            <form action="dashboard.html">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="help-links">
+                <a href="#">Create Account</a>
+                <a href="#">Need Help?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Styles (styles.css) -->
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('background.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .login-box {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .login-box h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #1b1bfc;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .help-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .help-links a {
+        font-size: 14px;
+        color: #1b1bfc;
+        text-decoration: none;
+    }
+</style>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        
+        <img src="C:\Users\admin\Downloads\images\GOLDBLUE.jpg" alt="GoldBlue" width="30" height="30">
+        <span>GOLDBLUE</span>
+
+        
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="deposit.html" class="active">Deposit</a></li>
+            <li><a href="#">Withdraw</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Dark Mode</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="deposit-header">
+            <h2>Deposit Request</h2>
+        </div>
+        
+        <div class="deposit-container">
+            <!-- Left side: Deposit Form -->
+            <div class="deposit-box">
+                <form>
+                    <select>
+                        <option>Select Mode of Payment</option>
+                        <option>Bank Transfer</option>
+                        <option>Gcash</option>
+                    </select>
+                    <input type="text" placeholder="Amount">
+                    <div class="upload-photo">
+                        <p>Upload photo here</p>
+                        <input type="file">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="deposit-info">
+                    <p>Account Name: EMAR CUNANAN MACASPAC</p>
+                    <p>GOTYME - 0191 5783 5687</p>
+                    <p>Crazy Deposit Time Bonus:</p>
+                    <ul>
+                        <li>Minimum 300 - 49,000 (Get 25% Additional)</li>
+                        <li>Minimum 50,000 - 1,000,000 (Get 50% Additional)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right side: Recent Deposit -->
+            <div class="recent-deposits">
+                <h3>Recent Deposits</h3>
+                <ul>
+                    <li>Deposit: ₱1,900 (Processing)</li>
+                    <li>Deposit: ₱200 (Success)</li>
+                    <li>Deposit: ₱5,000 (Success)</li>
+                    <li>Deposit: ₱3,000 (Processing)</li>
+                </ul>
+                <button class="see-transactions">See All Transactions</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Styles (styles.css) -->
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        background-color: #1d1d1d;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: #333;
+        color: white;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        background-color: #444;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .sidebar ul li a.active {
+        background-color: #6c47ff;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        color: white;
+    }
+
+    .deposit-header h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .deposit-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .deposit-box {
+        background-color: #2e2e2e;
+        padding: 20px;
+        border-radius: 10px;
+        width: 60%;
+    }
+
+    .deposit-box form {
+        margin-bottom: 20px;
+    }
+
+    .deposit-box select, .deposit-box input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #404040;
+        color: white;
+    }
+
+    .upload-photo {
+        text-align: center;
+        padding: 20px;
+        border: 2px dashed #6c47ff;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .upload-photo p {
+        color: #888;
+        font-size: 14px;
+    }
+
+    .deposit-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #6c47ff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .deposit-info {
+        margin-top: 20px;
+        color: #aaa;
+    }
+
+    .recent-deposits {
+        background-color: #2e2e2e;
+        padding: 20px;
+        border-radius: 10px;
+        width: 35%;
+    }
+
+    .recent-deposits h3 {
+        margin-bottom: 20px;
+    }
+
+    .recent-deposits ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .recent-deposits ul li {
+        margin-bottom: 10px;
+        color: #90ee90;
+    }
+
+    .see-transactions {
+        width: 100%;
+        padding: 10px;
+        background-color: #6c47ff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
